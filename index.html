@@ -60,6 +60,40 @@
           height: auto; 
           margin-right: 10px; /* Add space between image and button */
         }
+
+        .image-container {
+          display: flex; /* Use flexbox for better layout */
+          flex-wrap: wrap; /* Allow images to wrap onto new rows */
+          justify-content: space-between; /* Evenly space images */
+          margin: 25px;
+        }
+    
+        .image-item { /* New container for each image */
+          flex: 0 0 30%; /* Allocate equal space for each image */
+          margin-bottom: 10px; /* Add space between rows */
+          display: flex; /* Make image-item a flex container */
+          flex-direction: column; /* Stack image and button vertically */
+          align-items: center; /* Center the button horizontally */
+        }
+    
+        .dynamic-image {
+          max-width: 100%; 
+          height: auto; 
+          margin-bottom: 10px; /* Add space between image and button */
+          border-radius: 25%;
+        }
+
+        .image-item button {
+          background-color: #333333;
+          padding: 10px 20px; /* Add padding to the button */
+          border-radius: 25px;
+          font-size: 25px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .image-item button:hover {
+            background-color:#444444;
+        }
         </style>
 </head>
 <body style="background-color:#222222; font-family: verdana; color:#FFFFFF;">
@@ -106,16 +140,27 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        <div class="image-container">
+            <div class="image-item">
+              <img src="./mdrg/mdrg.png" alt="My Dystopian Robot Girlfriend" class="dynamic-image">
+              <a href="./mdrg/">
+                <button>My Dystopian Robot Girlfriend</button>
+              </a>
+            </div>
+          
+            <div class="image-item">
+              <img src="./dol/dol.png" alt="Degrees Of Lewdity" class="dynamic-image">
+              <a href="./dol/">
+                <button>Degrees Of Lewdity</button>
+              </a>
+            </div>
+          
+            <div class="image-item">
+              <img src="./fnafb/fnafb.png" alt="Five Nights at FuzzBoob's" class="dynamic-image">
+              <a href="./fnafb">
+                <button>Five Nights at FuzzBoob's</button>
+              </a>
+            </div>
+          </div>
 
 </body>
