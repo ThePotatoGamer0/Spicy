@@ -66,14 +66,24 @@
           flex-wrap: wrap; /* Allow images to wrap onto new rows */
           justify-content: space-between; /* Evenly space images */
           margin: 25px;
-        }
+        } 
     
         .image-item { /* New container for each image */
           flex: 0 0 30%; /* Allocate equal space for each image */
           margin-bottom: 10px; /* Add space between rows */
+          padding: 10px; /* Add padding around each image */
           display: flex; /* Make image-item a flex container */
           flex-direction: column; /* Stack image and button vertically */
           align-items: center; /* Center the button horizontally */
+          background-color: #444444;
+          border-radius: 20%;
+          transition: 0.5s;
+        }
+
+        .image-item:hover { /* New container for each image */
+          background-color: #555555;
+          scale: 1.1;
+          transition: 0.5s;
         }
     
         .dynamic-image {
